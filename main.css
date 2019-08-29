@@ -1,3 +1,42 @@
 body {
     background-color: lemonchiffon;
 }
+
+#pet-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1050px;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+}
+
+.pet-cards {
+    text-align: center;
+    border: 2px solid black;
+    width: 28%;
+    height: auto;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.pet-cards img {
+    width: 100%;
+    height: 200px;
+
+}
+
+/* MEDIA QUERIES */
+
+/* max-width 1050px breakpoint*/
+@media only screen and (max-width: 1049px) {
+    #pet-container {
+        width: 760px;
+    }
+    .pet-cards {
+        width: 45%;
+    }
+
+}
