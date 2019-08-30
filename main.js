@@ -49,7 +49,7 @@ const printToDom = (toPrint, divId) => {
 
 const petPrinter = (petArr) => {
     let petsToPrint = '';
-    for (let i = 0; i < pets.length; i++) {
+    for (let i = 0; i < petArr.length; i++) {
         const pet = petArr[i];
         petsToPrint +=
         `
@@ -63,6 +63,30 @@ const petPrinter = (petArr) => {
         `
     }
     printToDom(petsToPrint, 'pet-container');
-}
+};
 
 petPrinter(pets);
+
+document.getElementById('dragon').addEventListener('click', (e) => {
+    const petType = e.target.id
+    const selectedPets = []
+    for (let i = 0; i < pets.length; i++) {
+        const pet = pets[i];
+        if (pet.typeOfPet === petType) {
+            selectedPets.push(pet);
+        }
+    }
+    petPrinter(selectedPets);
+})
+
+// document.getElementById('dog').addEventListener('click', (e) => {
+//     const petType = e.target.id;
+//     const selectedPets = [];
+//     for (let i = 0; i < pets.length; i++) {
+//         const pet = pets[i];
+//         if (pet.typeOfPet === petType) {
+//             selectedPets.push(pet);
+//         }
+//     }
+//     petPrinter(selectedPets);
+// });
