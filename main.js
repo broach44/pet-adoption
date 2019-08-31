@@ -4,7 +4,7 @@ const pets = [
     name: 'Spyro',
     color: 'Purple',
     specialSkill: 'Head Bash, Fire Breath, Cute Personality',
-    typeOfPet: 'dragon'
+    typeOfPet: 'Dragon'
     },
     {
     image: 'https://cdn1us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/2016/05/garfield.jpg?itok=Qy7GbIi6',
@@ -25,7 +25,7 @@ const pets = [
     name: 'Elliot',
     color: 'Green',
     specialSkill: 'Invisibility, Flying',
-    typeOfPet: 'dragon'
+    typeOfPet: 'Dragon'
     },
     {
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_n6p5j2GBXFwkg-QaAS8cg_BXRRFnOGCGViBJAJYuvk0csZnX',
@@ -39,13 +39,14 @@ const pets = [
     name: 'Toothless',
     color: 'Black',
     specialSkill: 'Flying with half a tail, Fire Breath',
-    typeOfPet: 'dragon'
+    typeOfPet: 'Dragon'
     },
 ]
 
 const printToDom = (toPrint, divId) => {
     document.getElementById(divId).innerHTML = toPrint;
 };
+
 
 const petPrinter = (petArr) => {
     let petsToPrint = '';
@@ -67,7 +68,7 @@ const petPrinter = (petArr) => {
 
 petPrinter(pets);
 
-document.getElementById('dragon').addEventListener('click', (e) => {
+document.getElementById('Dragon').addEventListener('click', (e) => {
     const petType = e.target.id    
     const selectedPets = []
     for (let i = 0; i < pets.length; i++) {
@@ -78,5 +79,33 @@ document.getElementById('dragon').addEventListener('click', (e) => {
     }
     petPrinter(selectedPets);
 });
+
+document.getElementById('Dog').addEventListener('click', (e) => {
+    const petType = e.target.id    
+    const selectedPets = []
+    for (let i = 0; i < pets.length; i++) {
+        const pet = pets[i];
+        if (pet.typeOfPet === petType) {
+            selectedPets.push(pet);
+        }
+    }
+    petPrinter(selectedPets);
+});
+
+document.getElementById('Cat').addEventListener('click', (e) => {
+    const petType = e.target.id    
+    const selectedPets = []
+    for (let i = 0; i < pets.length; i++) {
+        const pet = pets[i];
+        if (pet.typeOfPet === petType) {
+            selectedPets.push(pet);
+        }
+    }
+    petPrinter(selectedPets);
+});
+
+document.getElementById('All').addEventListener('click', (e) => {
+    petPrinter(pets);
+})
 
 
