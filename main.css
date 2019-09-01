@@ -1,5 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: lemonchiffon;
+    background-color: antiquewhite;
+}
+
+h1 {
+    background-color: slategray;
+    height: 50px;
+    text-justify: center;
+    padding-top: 5px;
+    padding-left: 10px;
+    box-shadow: 4px 4px 4px darkslategray;
+    color: lightgray;
 }
 
 button {
@@ -12,6 +27,19 @@ button {
 #button-div {
     text-align: center;
     margin: 15px;
+}
+
+#All {
+    background-color: lightslategray;
+    border: 1px solid slategray;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#All:hover {
+    border: 2px solid darkslategray;
+    width: 125px;
+    height: 35px;
+    border-radius: 20px;
 }
 
 #Dog {
@@ -63,20 +91,42 @@ button {
 }
 
 .pet-cards {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    border: 2px solid black;
+    border: 1px solid black;
     width: 28%;
     height: auto;
-    padding: 10px;
+    padding: 0;
     margin: 15px;
-    border-radius: 15px;
-    background-color: white;
+    border-radius: 10px;
+    background-color: rgb(221, 229, 236);
+    box-shadow: 5px 5px 5px gray;
+}
+
+.pet-cards:hover {
+    box-shadow: 10px 10px 5px gray;
+    border: 3px solid darkslategray;
+}
+
+.pet-cards h2 {
+    background-color: slategray;
+    height: 40px;
+    padding-top: 5px;
+    border-radius: 10px 10px 0 0;
 }
 
 .pet-cards img {
     width: 100%;
     height: 200px;
+    margin: 0;
+    padding: 0;
+}
 
+.pet-cards h3 {
+    background-color: lightblue;
+    justify-self: flex-end;
+    
 }
 
 /* MEDIA QUERIES */
