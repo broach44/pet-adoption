@@ -2,6 +2,57 @@ body {
     background-color: lemonchiffon;
 }
 
+button {
+    width: 100px;
+    margin: 10px;
+    border-radius: 15px;
+    height: 25px;
+}
+
+#button-div {
+    text-align: center;
+    margin: 15px;
+}
+
+#Dog {
+    background-color: lightsalmon;
+    border: 1px solid salmon;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#Dog:hover {
+    border: 2px solid rgb(184, 98, 69);
+    width: 125px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+#Dragon {
+    background-color: lightseagreen;
+    border: 1px solid seagreen;
+    box-shadow: 2px 2px 2px lightseagreen;
+}
+
+#Dragon:hover {
+    border: 2px solid rgb(37, 95, 62);
+    width: 125px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+#Cat {
+    background-color: lightskyblue;
+    border: 1px solid skyblue;
+    box-shadow: 2px 2px 2px lightskyblue;
+}
+
+#Cat:hover {
+    border: 2px solid rgb(43, 124, 156);
+    width: 125px;
+    height: 35px;
+    border-radius: 20px;
+}
+
 #pet-container {
     display: flex;
     flex-flow: row wrap;
