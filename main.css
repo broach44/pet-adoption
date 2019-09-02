@@ -123,11 +123,17 @@ button {
     padding: 0;
 }
 
-.pet-cards h3 {
-    background-color: lightblue;
-    justify-self: flex-end;
-    
+.pet-cards p {
+    padding: 5px;
 }
+
+.pet-cards h3 {
+    margin-top: auto;
+    border-radius: 0 0 10px 10px;
+    height: 25px;
+    color: darkslategray;
+}
+
 
 /* MEDIA QUERIES */
 

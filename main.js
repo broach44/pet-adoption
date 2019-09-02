@@ -108,4 +108,7 @@ document.getElementById('All').addEventListener('click', (e) => {
     petPrinter(pets);
 })
 
-
+const x = document.querySelectorAll('h3');
+for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "red";
+}
