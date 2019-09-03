@@ -1,3 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: lemonchiffon;
+    background-color: antiquewhite;
+}
+
+h1 {
+    background-color: slategray;
+    height: 50px;
+    text-justify: center;
+    padding-top: 5px;
+    padding-left: 10px;
+    box-shadow: 4px 4px 4px darkslategray;
+    color: lightgray;
+}
+
+button {
+    width: 100px;
+    margin: 10px;
+    border-radius: 15px;
+    height: 25px;
+}
+
+#button-div {
+    text-align: center;
+    margin: 15px;
+}
+
+#All {
+    background-color: lightslategray;
+    border: 1px solid slategray;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#All:hover {
+    border: 2px solid darkslategray;
+    width: 125px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+#Dog {
+    background-color: lightsalmon;
+    border: 1px solid salmon;
+    box-shadow: 3px 3px 3px gray;
+}
+
+#Dog:hover {
+    border: 2px solid rgb(184, 98, 69);
+    width: 125px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+#Dragon {
+    background-color: lightseagreen;
+    border: 1px solid seagreen;
+    box-shadow: 2px 2px 2px lightseagreen;
+}
+
+#Dragon:hover {
+    border: 2px solid rgb(37, 95, 62);
+    width: 125px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.color-Dragon {
+    background-Color: lightseagreen;
+}
+
+.color-Cat {
+    background-color: lightskyblue;
+}
+
+.color-Dog {
+    background-color: lightsalmon;
+}
+
+#Cat {
+    background-color: lightskyblue;
+    border: 1px solid skyblue;
+    box-shadow: 2px 2px 2px lightskyblue;
+}
+
+#Cat:hover {
+    border: 2px solid rgb(43, 124, 156);
+    width: 125px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+#pet-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1050px;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+}
+
+.pet-cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    width: 28%;
+    height: auto;
+    padding: 0;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: rgb(221, 229, 236);
+    box-shadow: 5px 5px 5px gray;
+}
+
+.pet-cards:hover {
+    box-shadow: 10px 10px 5px gray;
+    border: 3px solid darkslategray;
+}
+
+.pet-cards h2 {
+    background-color: slategray;
+    height: 40px;
+    padding-top: 5px;
+    border-radius: 10px 10px 0 0;
+}
+
+.pet-cards img {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.pet-cards p {
+    padding: 5px;
+}
+
+.pet-cards h3 {
+    margin-top: auto;
+    border-radius: 0 0 10px 10px;
+    height: 25px;
+    color: darkslategray;
+}
+
+/* MEDIA QUERIES */
+
+/* max-width 1050px breakpoint*/
+@media only screen and (max-width: 1049px) {
+    #pet-container {
+        width: 760px;
+    }
+    .pet-cards {
+        width: 45%;
+    }
+
 }
