@@ -47,6 +47,18 @@ const printToDom = (toPrint, divId) => {
     document.getElementById(divId).innerHTML = toPrint;
 };
 
+// const colorTypeOfPet = () => {
+//     for (let i = 0; i < pets.length; i++) {
+//         const pet = pets[i];
+//         if (pet.typeOfPet === 'Dragon') {
+//             document.getElementsByTagName('h3')[i].style.backgroundColor = 'lightseagreen';
+//         } else if (pet.typeOfPet === 'Cat') {
+//             document.getElementsByTagName('h3')[i].style.backgroundColor = 'lightskyblue';
+//         } else {
+//             document.getElementsByTagName('h3')[i].style.backgroundColor = 'lightsalmon';
+//         }
+//     ;}
+//     }
 
 const petPrinter = (petArr) => {
     let petsToPrint = '';
@@ -59,7 +71,7 @@ const petPrinter = (petArr) => {
             <img src=${pet.image}>
             <p>${pet.color}</p>
             <p>${pet.specialSkill}</p>
-            <h3>${pet.typeOfPet}</h3>
+            <h3 class="color-${pet.typeOfPet}">${pet.typeOfPet}</h3>
         </div>
         `
     }
@@ -67,6 +79,7 @@ const petPrinter = (petArr) => {
 };
 
 petPrinter(pets);
+
 
 document.getElementById('Dragon').addEventListener('click', (e) => {
     const petType = e.target.id    
@@ -77,7 +90,7 @@ document.getElementById('Dragon').addEventListener('click', (e) => {
             selectedPets.push(pet);
         }
     }
-    petPrinter(selectedPets);
+    petPrinter(selectedPets);   
 });
 
 document.getElementById('Dog').addEventListener('click', (e) => {
@@ -108,7 +121,15 @@ document.getElementById('All').addEventListener('click', (e) => {
     petPrinter(pets);
 })
 
-const x = document.querySelectorAll('h3');
-for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "red";
-}
+// const x = document.querySelectorAll('h3');
+// const children = x.childNodes;
+// for (let i = 0; i < x.length; i++) {    
+//     if (children[i] === 'Dragon') {
+//         x.style.backgroundColor = 'red';
+//     }    
+//     // x[i].style.backgroundColor = "red";    
+// }
+
+
+
+

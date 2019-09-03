@@ -68,6 +68,18 @@ button {
     border-radius: 20px;
 }
 
+.color-Dragon {
+    background-Color: lightseagreen;
+}
+
+.color-Cat {
+    background-color: lightskyblue;
+}
+
+.color-Dog {
+    background-color: lightsalmon;
+}
+
 #Cat {
     background-color: lightskyblue;
     border: 1px solid skyblue;
