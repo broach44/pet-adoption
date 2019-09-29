@@ -12,21 +12,21 @@ A pet adoption site.  Cards are printed in the dom and categorized into dogs, ca
 
 ## Screenshots
 
-#### Home View:
+#### Main View:
 
+![Main View](https://raw.githubusercontent.com/broach44/pet-adoption/master/screenshots/main-view.PNG)
 
+#### Cat View:
 
-#### Bio View:
+![Cat View](https://raw.githubusercontent.com/broach44/pet-adoption/master/screenshots/cat-view.PNG)
 
+#### Dog View:
 
+![Dog View](https://raw.githubusercontent.com/broach44/pet-adoption/master/screenshots/dog-view.PNG)
 
-#### Technologies View:
+#### Dragon View:
 
-
-
-#### Projects View:
-
-
+![Dragon View](https://raw.githubusercontent.com/broach44/pet-adoption/master/screenshots/dragon-view.PNG)
 
 ## How to Run
 
